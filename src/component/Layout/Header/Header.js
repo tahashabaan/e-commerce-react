@@ -22,7 +22,7 @@ const Header = (props) => {
   return (
   <>
    <header className={classes.head}>
-     <Link to='/'>
+     <Link to='/Ecommerce'>
        <h3 onClick={closeMenuHandler}>Shoping Store</h3>
      </Link>
 

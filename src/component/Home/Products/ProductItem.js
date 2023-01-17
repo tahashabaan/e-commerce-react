@@ -7,10 +7,10 @@ import classes from './ProductItem.module.css';
 const ProductItem = ({product}) => {
  
   const productId = product.id;
-
+  // /Ecommerce/:productId
   return (
     <Card className={classes.item}>
-     <Link to={`/${productId}`}>
+     <Link to={`/Ecommerce/${productId}`}>
       <img src={product.thumbnail}/>
       <h4>{product.title}</h4>
     

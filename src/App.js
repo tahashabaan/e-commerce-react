@@ -34,18 +34,20 @@ const App = () => {
       {/* {showCart && <Modal/>} */}
 
        <Routes> 
-        <Route path='/'   //props?
+        <Route path='/Ecommerce'   //props?
           element={<Products 
                        products={items.products} 
                        loading={loading} 
                        error={error} />} />
           {/* path element  */}
-        <Route path='/:productId' 
+        <Route path='/Ecommerce/:productId'
           element={<ProductItemDetails  
                   products={items.products}/>}/>
 
         <Route path='/cart' 
-          element={products.length <1 ? <Navigate to='/'/> : <Cart products={products}/> }/>
+          element={products.length <1 ? 
+          <Navigate to='/Ecommerce'/> : <Cart products={products}/> }/>
+
         <Route path='/login' element={<Login/>}/>
         <Route path='/register' element={<Register/>}/>
         <Route path='/checkout' element={
