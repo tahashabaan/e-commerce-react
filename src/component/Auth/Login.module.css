@@ -1,26 +1,33 @@
-.login, .register {
-     width: 40%;
-     margin:12rem  auto;
-     list-style: none;   
+.login,
+.register {
+  width: 40%;
+  margin: 12rem auto;
+  list-style: none;
 }
 
 .btn {
-   width: 6rem;
-   margin-left: 50%;
-   transform: translateX(-50%);
+  width: 6rem;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
 }
 
-@media screen and (max-width: 740px){
-    .login, .register {
-      width: 80%;
-    }
+@media screen and (max-width: 740px) {
+  .login,
+  .register {
+    width: 80%;
+  }
 }
 
-@media screen and (max-width: 540px){
-   .btn{
-     display: block;
-   }
-   .link {
-      text-align: center;
-   }
+@media screen and (max-width: 540px) {
+  .btn {
+    display: block;
+  }
+  .link {
+    text-align: center;
+  }
 }

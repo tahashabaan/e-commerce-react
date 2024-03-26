@@ -16,7 +16,7 @@ const Products = ({products, loading, error}) => {
    key={product.id}  
    product={product}/> );
   
-  if (loading) content =<p><Spinner/></p>
+  if (loading) content =<p className={classes.loading}><Spinner/></p>
 
   if(error)  content = <p>Something Went Wrong!</p>
 

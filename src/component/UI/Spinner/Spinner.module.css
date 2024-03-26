@@ -8,15 +8,23 @@
   height: 3.5rem;
   border-bottom-color: transparent;
   border-radius: 50%;
-  animation: spinner 1s ease-in  infinite ;
+  animation: spinner 1s ease-in infinite;
 }
 
 @keyframes spinner {
-  from{
+  from {
     transform: rotate(0deg);
   }
 
-  to{
+  to {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .spinner {
+    width: 2.5rem;
+    height: 2.5rem;
+    left: 35%;
   }
 }

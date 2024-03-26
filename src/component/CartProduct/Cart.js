@@ -1,25 +1,19 @@
-import React from 'react'
-import CartItem from './CartItem';
-import { PaymentCart } from './PaymentCart';
-import { Navigate, Route } from 'react-router-dom';
-import classes from './Cart.module.css'
+import React from "react";
+import CartItem from "./CartItem";
+import { PaymentCart } from "./PaymentCart";
+import { Navigate, Route } from "react-router-dom";
+import classes from "./Cart.module.css";
 
-
-const Cart = ({products}) => {
-
+const Cart = ({ products }) => {
   return (
-  <div className={classes.cart}>  
+    <div className={classes.cart}>
+      <PaymentCart />
 
-    <PaymentCart/>
+      {products.map((product) => (
+        <CartItem key={product.id} product={product}></CartItem>
+      ))}
+    </div>
+  );
+};
 
-     {products.map( (product) => 
-      <CartItem 
-         key={product.id} 
-         product={product}>
-      </CartItem>)}
-  </div>
-
-  )
-}
-
-export default Cart
+export default Cart;
