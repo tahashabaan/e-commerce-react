@@ -2,6 +2,7 @@
 
 This is an e-commerce website built using React.js, designed to provide a modern and intuitive shopping experience for users.
 
+demo:::  https://e-commerce-react-js-demo.netlify.app/
 ## Features
 
 - Browse through a wide range of products
