@@ -36,43 +36,40 @@ const Login = () => {
 
   return (
     <>
-      {isLoading && !error ? (
-        <Card className={classes.login}>
-          <h3 className={classes.title}>Login</h3>
-          {error && <p className={classes.error}>{error}</p>}
-          <form onSubmit={onSubmitHandler}>
-            <Input
-              label="Email"
-              type="email"
-              id="email"
-              placeholder="enter email"
-              onChangeHandler={onChangeEmailHandler}
-              className={emailError}
-              onBlurHandler={onBlurEmailHandler}
-            />
+      (
+      <Card className={classes.login}>
+        <h3 className={classes.title}>Login</h3>
+        {error && <p className={classes.error}>{error}</p>}
+        <form onSubmit={onSubmitHandler}>
+          <Input
+            label="Email"
+            type="email"
+            id="email"
+            placeholder="enter email"
+            onChangeHandler={onChangeEmailHandler}
+            className={emailError}
+            onBlurHandler={onBlurEmailHandler}
+          />
 
-            <Input
-              label="Password"
-              type="password"
-              id="password"
-              placeholder="enter password"
-              onChangeHandler={onChangePasswordHandler}
-              onBlurHandler={onBlurPasswordHandler}
-              className={passwordError}
-            />
+          <Input
+            label="Password"
+            type="password"
+            id="password"
+            placeholder="enter password"
+            onChangeHandler={onChangePasswordHandler}
+            onBlurHandler={onBlurPasswordHandler}
+            className={passwordError}
+          />
 
-            <button className={classes.btn}>Login</button>
+          <button className={classes.btn}>Login</button>
 
-            <Link to="/register" className={classes.link}>
-              {" "}
-              Sign Up{" "}
-            </Link>
-          </form>
-        </Card>
-      ) : (
-        <Spinner />
-      )}
-      {/* {isLoading && error && <Spinner/>} */}
+          <Link to="/register" className={classes.link}>
+            {" "}
+            Sign Up{" "}
+          </Link>
+        </form>
+      </Card>
+      ) : ( )
     </>
   );
 };

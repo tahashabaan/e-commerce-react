@@ -16,8 +16,8 @@ const useAuth = () => {
 
     try {
       await userHandler(auth, email, password);
-      navigate(nav);
       setIsLoading(false);
+      navigate(nav);
     } catch (error) {
       setError(() => error.message);
       // alert(error.message);
