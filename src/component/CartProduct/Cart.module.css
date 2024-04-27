@@ -1,13 +1,15 @@
 .cart {
   margin-top: 6rem;
   scroll-behavior: auto;
+  width: 80%;
+  margin: 3rem auto;
 }
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 750px) {
   .cart {
+    width: 90%;
+    margin-top: 5rem;
     display: flex;
     flex-direction: column;
   }
 }
-
-
